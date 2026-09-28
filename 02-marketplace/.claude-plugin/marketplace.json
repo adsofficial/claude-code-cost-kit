@@ -1,0 +1,14 @@
+{
+  "name": "yourorg-claude-tools",
+  "description": "Company Claude Code plugins: cost-smart model routing, specialist agents and stack guides",
+  "owner": {
+    "name": "Platform Engineering"
+  },
+  "plugins": [
+    {
+      "name": "cost-smart-dev",
+      "source": "./plugins/cost-smart-dev",
+      "description": "Specialist agents on the right model (Haiku / Sonnet / Opus), a routing rulebook, phase handoff, and stack guides"
+    }
+  ]
+}

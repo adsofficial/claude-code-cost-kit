@@ -1,0 +1,31 @@
+# <Project name>
+
+<!-- Keep this file SHORT (aim for under 60 lines). It is loaded on every turn,
+     so every extra line is paid for again and again. Link to docs instead of pasting them. -->
+
+## What this is
+<One or two sentences: what the service/app does and who uses it.>
+
+## Stack
+- <e.g. ASP.NET Core (latest LTS) Web API + EF Core + Azure SQL>
+- <e.g. Flutter mobile app, Riverpod>
+- Follow the matching guide in the `stack-guides` skill.
+
+## Commands
+- Build: `<dotnet build | flutter analyze | npm run build>`
+- Test: `<dotnet test | flutter test | npm test | pytest -q>`
+- Run locally: `<command>`
+
+## Layout
+- `<src/Api>`: <what lives here>
+- `<src/Domain>`: <what lives here>
+- `<tests/>`: <test projects>
+
+## Rules for Claude
+- Follow the `model-routing` skill: use the cheapest agent that fits each task.
+- Plans go in `docs/ai/plan.md`; phase handoffs in `docs/ai/handoff.md`.
+- Never touch production resources. Dev connection strings come from <user-secrets / .env.local>.
+- Anything touching auth, payments or personal data must go through `security-reviewer` before merge.
+
+## Project-specific gotchas
+- <e.g. "Tenant ID must be passed to every repository call">

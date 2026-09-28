@@ -1,0 +1,20 @@
+{
+  "model": "opusplan",
+  "availableModels": ["opus", "sonnet", "haiku"],
+  "effortLevel": "medium",
+  "env": {
+    "CLAUDE_CODE_SUBAGENT_MODEL": "haiku"
+  },
+  "extraKnownMarketplaces": {
+    "yourorg-claude-tools": {
+      "source": {
+        "source": "git",
+        "url": "https://dev.azure.com/YOUR_ORG/YOUR_PROJECT/_git/claude-marketplace"
+      },
+      "autoUpdate": true
+    }
+  },
+  "enabledPlugins": {
+    "cost-smart-dev@yourorg-claude-tools": true
+  }
+}

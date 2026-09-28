@@ -1,0 +1,8 @@
+{
+  "name": "cost-smart-dev",
+  "version": "1.0.0",
+  "description": "Routes each task to the cheapest model that can do it well. Specialist agents with fixed models, a routing rulebook, phase handoff, and stack guides for .NET, Flutter, web, Python, data and AI projects.",
+  "author": {
+    "name": "Platform Engineering"
+  }
+}
